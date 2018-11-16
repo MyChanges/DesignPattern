@@ -4,7 +4,7 @@ package zp.designpattern.proxy;
  * Created by change on 2018/11/15.
  */
 
-public class UserDao implements DaoInterface {
+public class UserDao implements IDaoInterface {
     @Override
     public void add() {
         System.out.println("添加了。。。。");

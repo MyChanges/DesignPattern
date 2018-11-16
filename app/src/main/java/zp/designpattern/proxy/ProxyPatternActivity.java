@@ -36,7 +36,7 @@ public class ProxyPatternActivity extends AppCompatActivity {
         InvocationHandler h表示当前的InvocationHandler实现实例对象。*/
         DynamicProxy proxy = new DynamicProxy(userDao1);
         ClassLoader loader = userDao1.getClass().getClassLoader();
-        DaoInterface daoInterface  = (DaoInterface) Proxy.newProxyInstance(loader,new Class[] {DaoInterface.class},proxy);
+        IDaoInterface daoInterface  = (IDaoInterface) Proxy.newProxyInstance(loader,new Class[] {IDaoInterface.class},proxy);
         daoInterface.add();
         daoInterface.delete();
 

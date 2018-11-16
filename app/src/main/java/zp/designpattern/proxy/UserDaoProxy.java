@@ -4,10 +4,10 @@ package zp.designpattern.proxy;
  * Created by change on 2018/11/15.
  * 代理对象
  */
-public class UserDaoProxy implements DaoInterface {
-    private DaoInterface mDaoInterface;
+public class UserDaoProxy implements IDaoInterface {
+    private IDaoInterface mDaoInterface;
 
-    public UserDaoProxy(DaoInterface daoInterface) {
+    public UserDaoProxy(IDaoInterface daoInterface) {
         this.mDaoInterface = daoInterface;
 
     }
