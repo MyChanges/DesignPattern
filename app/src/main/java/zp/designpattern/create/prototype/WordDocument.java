@@ -1,4 +1,4 @@
-package zp.designpattern.prototype;
+package zp.designpattern.create.prototype;
 
 import java.util.ArrayList;
 
@@ -25,6 +25,14 @@ import java.util.ArrayList;
  1、网络请求更新用户信息
  原文：https://blog.csdn.net/forwujinwei/article/details/79915872
  版权声明：本文为博主原创文章，转载请附上博文链接！
+
+
+ 有3个角色
+  原型角色 具体原型角色 使用者角色
+
+ 这种模式是实现了一个原型接口，该接口用于创建当前对象的克隆。当直接创建对象的代价比较大时，则采用这种模式。
+ 例如，一个对象需要在一个高代价的数据库操作之后被创建。我们可以缓存该对象，
+ 在下一个请求时返回它的克隆，在需要的时候更新数据库，以此来减少数据库调用。
  */
 public class WordDocument implements Cloneable { //(WardDocument == ConcretePrototype)  ， Cloneable Prototype
     private String mText;

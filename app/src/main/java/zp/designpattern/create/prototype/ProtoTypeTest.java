@@ -1,10 +1,10 @@
-package zp.designpattern.prototype;
+package zp.designpattern.create.prototype;
 
 /**
  * Created by change on 2018/11/16.
  */
 
-public class Test {
+public class ProtoTypeTest {
     // ①对于数据类型是基本数据类型的成员变量，浅拷贝会直接进行值传递，
     // 也就是将该属性值复制一份给新的对象。因为是两份不同的数据
     // ，所以对其中一个对象的该成员变量值进行修改，不会影响另一个对象拷贝得到的数据。
