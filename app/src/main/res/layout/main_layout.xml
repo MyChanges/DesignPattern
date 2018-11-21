@@ -10,4 +10,12 @@
         android:layout_height="wrap_content"
         android:onClick="proxyPattern"
         android:text="代理模式" />
+
+
+    <Button
+        android:id="@+id/btn_adapter_pattern"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="adapterPattern"
+        android:text="适配器模式" />
 </LinearLayout>

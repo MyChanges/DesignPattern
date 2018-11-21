@@ -18,6 +18,8 @@
             </intent-filter>
         </activity>
         <activity android:name=".proxy.ProxyPatternActivity"></activity>
+        <activity android:name=".structure.adapter.sample.CCBActivity"></activity>
+        <activity android:name=".structure.adapter.sample.CircleActivity"></activity>
     </application>
 
 </manifest>

@@ -10,6 +10,7 @@ import android.widget.Toast;
 
 import zp.designpattern.R;
 import zp.designpattern.proxy.ProxyPatternActivity;
+import zp.designpattern.structure.adapter.sample.CircleActivity;
 
 /**
  * Created by change on 2018/11/15.
@@ -30,5 +31,9 @@ public class MainActivity extends AppCompatActivity {
     public void proxyPattern(View view) {
         startActivity(new Intent(MainActivity.this, ProxyPatternActivity.class));
         Toast.makeText(this, "点击了代理模式", Toast.LENGTH_SHORT).show();
+    }
+
+    public void adapterPattern(View view) {
+        startActivity(new Intent(MainActivity.this, CircleActivity.class));
     }
 }
